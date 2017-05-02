@@ -1,4 +1,3 @@
-import { AppRegistry } from 'react-native';
-import App from './app/index';
+import registerApp from './app/index';
 
-AppRegistry.registerComponent('GettingStartedReactNativeNav', () => App);
+registerApp();

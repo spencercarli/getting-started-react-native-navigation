@@ -3,11 +3,15 @@ import { Text } from 'react-native';
 import Container from '../components/Container';
 
 class Screen extends Component {
+  handlePress = () => {
+    this.props.navigator.dismissModal();
+  };
+
   render() {
     return (
       <Container
         backgroundColor="#01446b"
-        onPress={() => console.log('press')}
+        onPress={this.handlePress}
       />
     );
   }
